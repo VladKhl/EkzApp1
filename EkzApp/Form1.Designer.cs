@@ -43,6 +43,13 @@
             this.rachet = new System.Windows.Forms.Button();
             this.clean = new System.Windows.Forms.Button();
             this.save = new System.Windows.Forms.Button();
+            this.sumvip = new System.Windows.Forms.Label();
+            this.sumproc = new System.Windows.Forms.Label();
+            this.effectst = new System.Windows.Forms.Label();
+            this.obcsum = new System.Windows.Forms.TextBox();
+            this.procsum = new System.Windows.Forms.TextBox();
+            this.steffect = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.OutputTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,6 +101,7 @@
             this.procentlabel.Size = new System.Drawing.Size(106, 13);
             this.procentlabel.TabIndex = 5;
             this.procentlabel.Text = "Процентная ставка";
+
             // 
             // procentlabel2
             // 
@@ -161,6 +169,7 @@
             this.clean.TabIndex = 13;
             this.clean.Text = "Очистить результат";
             this.clean.UseVisualStyleBackColor = true;
+            this.clean.Click += new System.EventHandler(this.clean_Click);
             // 
             // save
             // 
@@ -170,12 +179,75 @@
             this.save.TabIndex = 14;
             this.save.Text = "Сохранить таблицу";
             this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
+            // 
+            // sumvip
+            // 
+            this.sumvip.AutoSize = true;
+            this.sumvip.Location = new System.Drawing.Point(203, 12);
+            this.sumvip.Name = "sumvip";
+            this.sumvip.Size = new System.Drawing.Size(126, 13);
+            this.sumvip.TabIndex = 15;
+            this.sumvip.Text = "Общая сумма выплаты";
+            // 
+            // sumproc
+            // 
+            this.sumproc.AutoSize = true;
+            this.sumproc.Location = new System.Drawing.Point(203, 70);
+            this.sumproc.Name = "sumproc";
+            this.sumproc.Size = new System.Drawing.Size(97, 13);
+            this.sumproc.TabIndex = 16;
+            this.sumproc.Text = "Сумма процентов";
+            // 
+            // effectst
+            // 
+            this.effectst.AutoSize = true;
+            this.effectst.Location = new System.Drawing.Point(203, 127);
+            this.effectst.Name = "effectst";
+            this.effectst.Size = new System.Drawing.Size(115, 13);
+            this.effectst.TabIndex = 17;
+            this.effectst.Text = "Эффективная ставка";
+            // 
+            // obcsum
+            // 
+            this.obcsum.Location = new System.Drawing.Point(206, 28);
+            this.obcsum.Name = "obcsum";
+            this.obcsum.Size = new System.Drawing.Size(96, 20);
+            this.obcsum.TabIndex = 18;
+            // 
+            // procsum
+            // 
+            this.procsum.Location = new System.Drawing.Point(206, 86);
+            this.procsum.Name = "procsum";
+            this.procsum.Size = new System.Drawing.Size(96, 20);
+            this.procsum.TabIndex = 19;
+            // 
+            // steffect
+            // 
+            this.steffect.Location = new System.Drawing.Point(206, 151);
+            this.steffect.Name = "steffect";
+            this.steffect.Size = new System.Drawing.Size(96, 20);
+            this.steffect.TabIndex = 20;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(121, 249);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(208, 20);
+            this.textBox1.TabIndex = 21;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.steffect);
+            this.Controls.Add(this.procsum);
+            this.Controls.Add(this.obcsum);
+            this.Controls.Add(this.effectst);
+            this.Controls.Add(this.sumproc);
+            this.Controls.Add(this.sumvip);
             this.Controls.Add(this.save);
             this.Controls.Add(this.clean);
             this.Controls.Add(this.rachet);
@@ -216,6 +288,13 @@
         private System.Windows.Forms.Button rachet;
         private System.Windows.Forms.Button clean;
         private System.Windows.Forms.Button save;
+        private System.Windows.Forms.Label sumvip;
+        private System.Windows.Forms.Label sumproc;
+        private System.Windows.Forms.Label effectst;
+        private System.Windows.Forms.TextBox obcsum;
+        private System.Windows.Forms.TextBox procsum;
+        private System.Windows.Forms.TextBox steffect;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
