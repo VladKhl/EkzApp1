@@ -34,6 +34,12 @@
             this.summalabel = new System.Windows.Forms.Label();
             this.sumtext = new System.Windows.Forms.TextBox();
             this.procentlabel = new System.Windows.Forms.Label();
+            this.procentlabel2 = new System.Windows.Forms.Label();
+            this.procentlabel1 = new System.Windows.Forms.Label();
+            this.procentlabel3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.OutputTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,11 +92,66 @@
             this.procentlabel.TabIndex = 5;
             this.procentlabel.Text = "Процентная ставка";
             // 
+            // procentlabel2
+            // 
+            this.procentlabel2.AutoSize = true;
+            this.procentlabel2.Location = new System.Drawing.Point(12, 181);
+            this.procentlabel2.Name = "procentlabel2";
+            this.procentlabel2.Size = new System.Drawing.Size(79, 13);
+            this.procentlabel2.TabIndex = 6;
+            this.procentlabel2.Text = "с 6 по 10 день";
+            // 
+            // procentlabel1
+            // 
+            this.procentlabel1.AutoSize = true;
+            this.procentlabel1.Location = new System.Drawing.Point(12, 154);
+            this.procentlabel1.Name = "procentlabel1";
+            this.procentlabel1.Size = new System.Drawing.Size(73, 13);
+            this.procentlabel1.TabIndex = 7;
+            this.procentlabel1.Text = "с 0 по 5 день";
+            // 
+            // procentlabel3
+            // 
+            this.procentlabel3.AutoSize = true;
+            this.procentlabel3.Location = new System.Drawing.Point(12, 207);
+            this.procentlabel3.Name = "procentlabel3";
+            this.procentlabel3.Size = new System.Drawing.Size(73, 13);
+            this.procentlabel3.TabIndex = 8;
+            this.procentlabel3.Text = "после 11 дня";
+            this.procentlabel3.Click += new System.EventHandler(this.procentlabel3_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(100, 151);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(78, 20);
+            this.textBox1.TabIndex = 9;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(100, 178);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(78, 20);
+            this.textBox2.TabIndex = 10;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(100, 207);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(78, 20);
+            this.textBox3.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.procentlabel3);
+            this.Controls.Add(this.procentlabel1);
+            this.Controls.Add(this.procentlabel2);
             this.Controls.Add(this.procentlabel);
             this.Controls.Add(this.sumtext);
             this.Controls.Add(this.summalabel);
@@ -113,6 +174,12 @@
         private System.Windows.Forms.Label summalabel;
         private System.Windows.Forms.TextBox sumtext;
         private System.Windows.Forms.Label procentlabel;
+        private System.Windows.Forms.Label procentlabel2;
+        private System.Windows.Forms.Label procentlabel1;
+        private System.Windows.Forms.Label procentlabel3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
 

@@ -16,5 +16,10 @@ namespace EkzApp
         {
             InitializeComponent();
         }
+
+        private void procentlabel3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
