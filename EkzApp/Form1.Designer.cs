@@ -37,9 +37,12 @@
             this.procentlabel2 = new System.Windows.Forms.Label();
             this.procentlabel1 = new System.Windows.Forms.Label();
             this.procentlabel3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.stavka1 = new System.Windows.Forms.TextBox();
+            this.stavka2 = new System.Windows.Forms.TextBox();
+            this.stavka3 = new System.Windows.Forms.TextBox();
+            this.rachet = new System.Windows.Forms.Button();
+            this.clean = new System.Windows.Forms.Button();
+            this.save = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.OutputTable)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,35 +123,65 @@
             this.procentlabel3.Text = "после 11 дня";
             this.procentlabel3.Click += new System.EventHandler(this.procentlabel3_Click);
             // 
-            // textBox1
+            // stavka1
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 151);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(78, 20);
-            this.textBox1.TabIndex = 9;
+            this.stavka1.Location = new System.Drawing.Point(100, 151);
+            this.stavka1.Name = "stavka1";
+            this.stavka1.Size = new System.Drawing.Size(78, 20);
+            this.stavka1.TabIndex = 9;
             // 
-            // textBox2
+            // stavka2
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 178);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 20);
-            this.textBox2.TabIndex = 10;
+            this.stavka2.Location = new System.Drawing.Point(100, 178);
+            this.stavka2.Name = "stavka2";
+            this.stavka2.Size = new System.Drawing.Size(78, 20);
+            this.stavka2.TabIndex = 10;
             // 
-            // textBox3
+            // stavka3
             // 
-            this.textBox3.Location = new System.Drawing.Point(100, 207);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 20);
-            this.textBox3.TabIndex = 11;
+            this.stavka3.Location = new System.Drawing.Point(100, 207);
+            this.stavka3.Name = "stavka3";
+            this.stavka3.Size = new System.Drawing.Size(78, 20);
+            this.stavka3.TabIndex = 11;
+            // 
+            // rachet
+            // 
+            this.rachet.Location = new System.Drawing.Point(16, 247);
+            this.rachet.Name = "rachet";
+            this.rachet.Size = new System.Drawing.Size(75, 22);
+            this.rachet.TabIndex = 12;
+            this.rachet.Text = "Расчитать";
+            this.rachet.UseVisualStyleBackColor = true;
+            // 
+            // clean
+            // 
+            this.clean.Location = new System.Drawing.Point(16, 291);
+            this.clean.Name = "clean";
+            this.clean.Size = new System.Drawing.Size(132, 21);
+            this.clean.TabIndex = 13;
+            this.clean.Text = "Очистить результат";
+            this.clean.UseVisualStyleBackColor = true;
+            // 
+            // save
+            // 
+            this.save.Location = new System.Drawing.Point(15, 336);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(119, 21);
+            this.save.TabIndex = 14;
+            this.save.Text = "Сохранить таблицу";
+            this.save.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.save);
+            this.Controls.Add(this.clean);
+            this.Controls.Add(this.rachet);
+            this.Controls.Add(this.stavka3);
+            this.Controls.Add(this.stavka2);
+            this.Controls.Add(this.stavka1);
             this.Controls.Add(this.procentlabel3);
             this.Controls.Add(this.procentlabel1);
             this.Controls.Add(this.procentlabel2);
@@ -177,9 +210,12 @@
         private System.Windows.Forms.Label procentlabel2;
         private System.Windows.Forms.Label procentlabel1;
         private System.Windows.Forms.Label procentlabel3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox stavka1;
+        private System.Windows.Forms.TextBox stavka2;
+        private System.Windows.Forms.TextBox stavka3;
+        private System.Windows.Forms.Button rachet;
+        private System.Windows.Forms.Button clean;
+        private System.Windows.Forms.Button save;
     }
 }
 
