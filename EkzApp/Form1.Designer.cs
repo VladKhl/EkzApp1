@@ -49,9 +49,9 @@
             // OutputTable
             // 
             this.OutputTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.OutputTable.Location = new System.Drawing.Point(459, 12);
+            this.OutputTable.Location = new System.Drawing.Point(345, 12);
             this.OutputTable.Name = "OutputTable";
-            this.OutputTable.Size = new System.Drawing.Size(329, 426);
+            this.OutputTable.Size = new System.Drawing.Size(443, 426);
             this.OutputTable.TabIndex = 0;
             // 
             // daylabel
@@ -121,7 +121,6 @@
             this.procentlabel3.Size = new System.Drawing.Size(73, 13);
             this.procentlabel3.TabIndex = 8;
             this.procentlabel3.Text = "после 11 дня";
-            this.procentlabel3.Click += new System.EventHandler(this.procentlabel3_Click);
             // 
             // stavka1
             // 
