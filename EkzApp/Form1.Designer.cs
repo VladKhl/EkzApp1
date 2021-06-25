@@ -151,6 +151,7 @@
             this.rachet.TabIndex = 12;
             this.rachet.Text = "Расчитать";
             this.rachet.UseVisualStyleBackColor = true;
+            this.rachet.Click += new System.EventHandler(this.rachet_Click);
             // 
             // clean
             // 
